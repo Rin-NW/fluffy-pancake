@@ -1,7 +1,7 @@
 'use strict';
 
-function rand(m, n) {
-	return m + Math.floor((n - m + 1) * Math.random());
+function rand(min, max) {
+	return min + Math.floor((max - min + 1) * Math.random());
 }
 
 function randFace() {
