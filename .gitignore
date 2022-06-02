@@ -1,0 +1,11 @@
+#project dependencies
+node_modules
+
+#debugging logs
+npm-debug.log*
+
+#temporary files
+*.tmp
+Jest Learning
+
+.DS_Store
