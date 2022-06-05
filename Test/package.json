@@ -1,0 +1,23 @@
+{
+  "name": "fluffy-pancake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harvey1507495/fluffy-pancake.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harvey1507495/fluffy-pancake/issues"
+  },
+  "homepage": "https://github.com/Harvey1507495/fluffy-pancake#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "jest": "^28.1.0"
+  }
+}
