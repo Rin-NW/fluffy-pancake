@@ -1,13 +1,8 @@
 'use strict';
 
 var rand = require('../module/rand');
-
-var min = 0;
-var max = 50;
-
-function randFace() {
-	return ['Crown', 'Anchor', 'Heart', 'Spade', 'Club', 'Diamond'][rand(0,5)];
-}
+var randFace = require('../module/randface')
+var arr = ['Crown', 'Anchor', 'Heart', 'Spade', 'Club', 'Diamond'];
 
 for (let funds = 50, round = 0; funds > 1 && funds < 100; round++){
 	console.log(`Round: ${round}`);
@@ -22,7 +17,7 @@ for (let funds = 50, round = 0; funds > 1 && funds < 100; round++){
 		let remaining = totalBet;
 		do {
 			let bet = rand(1, remaining);
-			let face = randFace();
+			let face = randFace(arr);
 			bets[face] = bets[face] + bet;
 			console.log ('I would bet on : ' + face + ' with ' + bets[face] + 'p');
 			remaining = remaining - bet;
@@ -35,7 +30,7 @@ for (let funds = 50, round = 0; funds > 1 && funds < 100; round++){
 	const hand = [];
 
 	for (let roll = 0; roll < 3; roll++) {
-		hand.push(randFace());
+		hand.push(randFace(arr));
 	}
 
 	console.log(`\thand: ${hand.join(',')}`);

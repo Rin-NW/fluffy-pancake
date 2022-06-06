@@ -1,3 +1,0 @@
-module.exports = function randFace() {
-	return ['', '', '', '', '', ''][rand(0,5)];
-}
